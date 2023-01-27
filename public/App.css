@@ -1,0 +1,233 @@
+*{
+    box-sizing: border-box;
+    text-align: center;
+    padding:0;
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+    color:#989898;
+}
+
+body{
+     background:linear-gradient(to left, rgba(94, 88, 117, 0.4),rgba(157, 156, 174, 0.1)); 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    /* background-image: url("https://www.transparenttextures.com/patterns/clean-gray-paper.png"); */
+
+    /* background-image: url('/images/notebook-with-checklist-desk.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 100% 100vh; */
+}
+.menu{
+    position:fixed;
+    text-align: center; 
+    width:30%;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e3e4ea;
+    border-right:2px solid #E0E0E0;
+}
+
+.container-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin:30px auto;
+    padding:30px 0;
+}
+
+.container-row{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.card{
+    max-width:350px;
+    min-width: 300px;
+    position:relative;
+    margin:50px auto;
+    background:linear-gradient(to right, rgb(237, 237, 237),rgb(244, 241, 255)); 
+    color:#fff;
+    border-radius:4px;
+    cursor: pointer;
+}
+
+.card-input{
+    width:75%;
+    margin:10px 0;
+    border: 3px solid #ccc;
+    padding: 12px 20px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    text-align: center;
+    
+}
+
+.card-input:focus {
+    border: 3px solid #555;
+}
+
+h2{
+    padding:20px 5px 40px;
+}
+
+
+.input{
+    width:100%;
+    text-align: left;
+    font-size: 13px;
+    padding: 0 20px;
+    background: #FFFF;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.comment{
+    padding: 30px;
+}
+
+.header{
+    width:100%;
+    min-width: 300px;
+    height:120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(84, 84, 84, 0.5)); 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #FFFF;
+
+}
+
+.white-bg{
+    width:100%;
+    min-width: 300px;
+    max-width: 700px;
+    min-height: 450px;
+    margin:50px auto;
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    padding:30px 0 100px 0;
+}
+
+.panel{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.panel-transparent{
+    background: rgba(169, 169, 169, 0.573);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.project-container{
+    width: 90%;
+}
+
+.project-show{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(245, 245, 245, 0.573);
+}
+
+.project-show:first-child{
+    width:100%;
+    border-top: 1px solid gray;
+}
+.project-show-checkbox{
+    margin-right:20px;
+}
+
+.project-show-header{
+    margin:0 auto;
+    padding:0 10px;
+    width:100%;
+    height:50px;
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    transition: 0.5s ease;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    cursor: pointer;
+}
+
+.project-show-header:first-child{
+    margin-right:10px;
+}
+
+.project-show-button{
+    margin:0 5px;
+    cursor: pointer;
+}
+
+.project-show-header:hover{
+    background-color: rgb(241, 241, 241);
+}
+
+.button {
+    background: rgba(0,0,0,0);
+    border: #FFFFFF;
+    padding:0 5px;
+    cursor: pointer;
+    font-size:20px;
+    position:absolute;
+    top:22px;
+    right:12px;
+    font-size:30px;
+    font-weight: bold;
+    
+}
+
+.button1{
+    display:inline-block;
+    padding:0.75em 2.2em;
+    border:2px solid #ccc;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    text-align:center;
+    transition: all 0.2s;
+    background-color:#FFFFFF;
+    }
+.button1:hover{ 
+    border:2px solid #555;
+}
+
+/* ----------------- FOOTER ----------------- */
+
+footer h5{
+    height:15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom,rgba(84, 84, 84, 0.7), rgba(0,0,0,0.8)); 
+    color:rgb(255, 255, 255);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    white-space: pre-line;
+}
+
+
+
+
+
+
