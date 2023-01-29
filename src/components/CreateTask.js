@@ -27,6 +27,7 @@ function CreateTask(props){
 
     function handleSubmit(event){
         event.preventDefault();
+        event.stopPropagation();
         props.addNote({...task,id:crypto.randomUUID().replace(/_/g,"")});
         setTask({
             title:"",
